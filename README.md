@@ -19,7 +19,7 @@ Este repositório documenta minha jornada de aprendizado da linguagem Rust, segu
 ## Seção 1: Configuração Inicial até Desafios de Controle de Fluxo e Funções
 - **Descrição:** Configuração do ambiente de desenvolvimento Rust, introdução à linguagem, controle de fluxo com if, else e loops, e criação de funções básicas.
 
-[Código da Seção 1](./secao1)
+[Código da Seção 1](https://github.com/AntonioPaess/Rust-Journey-Do-Zero-ao-Pleno/tree/main/Modulo_1)
 
 ## Seção 2: Explorando Estruturas de Dados e Funcionalidades Avançadas em Rust
 - **Descrição:** Exploração de estruturas de dados como vetores, strings e slices, além de funcionalidades avançadas como enums e match.

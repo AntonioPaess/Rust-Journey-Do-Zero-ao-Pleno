@@ -44,7 +44,7 @@ fn busca_binaria(list: &[i32], number: i32) -> Option<i32> {
 
 fn main() {
     // Desafio 1930 BeeCrownd - Tomada
-    /* let mut input = String::new();
+     let mut input = String::new();
     let quantidade:usize = 3;
     let mut soma:i32 = 0;
     io::stdin()
@@ -67,10 +67,10 @@ fn main() {
         soma += number;
     }
 
-    println!("{}", soma); */
+    println!("{}", soma); 
 
     // Desafio 2374 BeeCrownd - Pneu
-    /* let mut input = String::new();
+     let mut input = String::new();
     let mut input2 = String::new();
 
     let valor1: i32;
@@ -87,7 +87,7 @@ fn main() {
 
     println!("{}", diferenca); */
 
-   /*  // Desafio 2413 BeeCrownd - Busca na Internet
+     // Desafio 2413 BeeCrownd - Busca na Internet
 
     let mut input = String:: new();
 
@@ -101,7 +101,7 @@ fn main() {
 
     // Desafio 2006 BeeCrownd - Identificando o Chá
 
-    /* let mut cha_escolhido = String::new();
+     let mut cha_escolhido = String::new();
     let mut input_respostas = String::new();
 
     io::stdin().read_line(&mut cha_escolhido).expect("Erro ao ler a linha");
@@ -130,7 +130,7 @@ fn main() {
 
     // Desafio 1153 BeeCrownd - Fatorial Simples
 
-    /* let mut input = String::new();
+     let mut input = String::new();
 
     io::stdin().read_line(&mut input).expect("Falha ao ler entrada");
 
