@@ -1,5 +1,29 @@
 use std::io;
 
+fn dobro(numero: i32) -> i32 {
+    return numero * 2;
+}
+
+fn comparacao(valor_a:i32, valor_b: i32) -> i32{
+    if valor_a >= valor_b{
+        return valor_a;
+    }
+    else{
+        return valor_b;
+    }
+}
+
+
+fn fatorial(valor:i32) -> i32{
+    let mut fatorial = 1;
+    let range = 1..=valor;
+
+    for i in range{
+        fatorial *= i;
+    } 
+    return fatorial;
+}
+
 
 
 fn main(){
@@ -72,15 +96,63 @@ fn main(){
         }
 
         quantidade_alunos_int -= 1; 
-    }
-
-    println!("A quantidade de alunos em recuperação é: {}.", soma_rec);
-    println!("E a quantidade de alunos aprovados é: {}",soma_aprov);
+        
+        println!("A quantidade de alunos em recuperação é: {}.", soma_rec);
+        println!("E a quantidade de alunos aprovados é: {}",soma_aprov);
+        }
 
 
 
     // Tarefa 3 - Maior Divisor Comum usando While
 
+    let mut divisor_a = 400; 
+    let mut divisor_b = 320; 
+    let mut resto;
+
+    while divisor_b != 0 {
+        resto = divisor_a % divisor_b; 
+        divisor_a = divisor_b;        
+        divisor_b = resto;            
+    }
+
+    println!("O MDC é: {}", divisor_a);
+
+    // Tarefa 4 - Criar uma função que retorna o dobro de um número inteiro
+
+    let valor:i32 = 2;
+    let resultado:i32;
+
+    resultado = dobro(valor);
+    println!("O dobro do valor escolhido é: {}", resultado);
+
+    // Tarefa 5 - Qual o maior número? Faça uma função de comparação entre dois números
+
+    let valor_a = 100;
+    let valor_b =  25;
+
+    let resposta = comparacao(valor_a, valor_b);
+
+    println!("O maior valor entre {} e {} é: {}", valor_a, valor_b, resposta);
+
+
+    // Tarefa 6 - Faça uma função que realiza a fotoração de cada item em um vetor
+
+    let lista = vec![1,2,3,4,5];
     
+
+    for i in lista{
+        println!("O fatorial do número {} é: {}", i, fatorial(i));
+    }
+
+    // Tarefa 7 - Crie um exemplo de Closure
+    let mut entrada_usuario = String::new();
+
+    io::stdin().read_line(&mut entrada_usuario).expect("Erro ao ler entrada");
+    let valor_int = entrada_usuario.trim().parse::<i32>().unwrap();
+    
+    let quadrado = |x:i32| -> i32 {x * x};
+    println!("O quadrado de {} é: {}",valor_int, quadrado(valor_int))
+
+
     
 }
