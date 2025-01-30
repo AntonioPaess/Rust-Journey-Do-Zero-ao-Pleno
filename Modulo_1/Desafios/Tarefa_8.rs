@@ -5,7 +5,7 @@
     ✅ A comparação usa os valores Unicode.
     ✅ Você não precisa converter char para u8 para fazer a ordenação.*/
 
-    fn my_sort(vetor: &str) -> Vec<char>{
+fn my_sort(vetor: &str) -> Vec<char>{
     let mut caracteres: Vec<char> = vetor.chars().collect();
     for i in 0..caracteres.len(){
            for j in i+1..caracteres.len(){  
