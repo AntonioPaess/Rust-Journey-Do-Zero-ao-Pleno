@@ -66,3 +66,9 @@ fn main(){
         Directions::Left => println!("O jogador foi para esquerda")
     }
 }
+
+
+
+
+
+
